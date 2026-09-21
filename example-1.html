@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>دعوة حفل زفاف | أروى ومصعب</title>
+
+
+    <!-- ================= GOOGLE FONTS ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap"
+          rel="stylesheet">
+
+
+    <!-- ================= FONT AWESOME ================= -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <style>
+
+        /* =====================================================
+           GENERAL
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        :root {
+
+            --burgundy: #5a0718;
+            --burgundy-dark: #35030d;
+            --burgundy-light: #781c32;
+            --burgundy-soft: #8b2940;
+
+            --gold: #bd9147;
+            --gold-light: #e1c27d;
+
+            --cream: #f8f0e4;
+            --cream-dark: #eee0cd;
+
+            --text: #48101b;
+            --white: #fffaf3;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            font-family: "Tajawal", sans-serif;
+
+            background: var(--burgundy-dark);
+
+            color: var(--text);
+
+            overflow-x: hidden;
+        }
+
+
+        button {
+            font-family: inherit;
+        }
+
+
+
+        /* =====================================================
+           COVER
+        ===================================================== */
+
+        .cover {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 30px;
+
+            background:
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(189,145,71,.25),
+                    transparent 25%
+                ),
+                radial-gradient(
+                    circle at 85% 85%,
+                    rgba(189,145,71,.20),
+                    transparent 25%
+                ),
+                var(--burgundy-dark);
+        }
+
+
+        .cover::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 450px;
+
+            height: 450px;
+
+            border: 1px solid rgba(225,194,125,.3);
+
+            border-radius: 50%;
+
+            top: -260px;
+
+            right: -220px;
+        }
+
+
+        .cover::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 450px;
+
+            height: 450px;
+
+            border: 1px solid rgba(225,194,125,.3);
+
+            border-radius: 50%;
+
+            bottom: -260px;
+
+            left: -220px;
+        }
+
+
+
+        /* =====================================================
+           COVER CARD
+        ===================================================== */
+
+        .cover-card {
+
+            width: min(92%, 620px);
+
+            min-height: 700px;
+
+            background: var(--cream);
+
+            border: 2px solid var(--gold);
+
+            outline: 1px solid rgba(225,194,125,.5);
+
+            outline-offset: 8px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 60px 30px;
+
+            position: relative;
+
+            z-index: 2;
+
+            box-shadow:
+                0 30px 80px rgba(0,0,0,.5);
+
+            animation: cardAppear 1.2s ease;
+        }
+
+
+        @keyframes cardAppear {
+
+            from {
+                opacity: 0;
+                transform: scale(.88);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
+        .corner {
+
+            position: absolute;
+
+            color: var(--gold);
+
+            font-size: 45px;
+
+            opacity: .9;
+        }
+
+
+        .corner.top-right {
+
+            top: 18px;
+
+            right: 20px;
+
+            transform: rotate(90deg);
+        }
+
+
+        .corner.top-left {
+
+            top: 18px;
+
+            left: 20px;
+
+            transform: rotate(180deg);
+        }
+
+
+        .corner.bottom-right {
+
+            bottom: 18px;
+
+            right: 20px;
+        }
+
+
+        .corner.bottom-left {
+
+            bottom: 18px;
+
+            left: 20px;
+
+            transform: rotate(270deg);
+        }
+
+
+        .cover-content {
+            width: 100%;
+        }
+
+
+
+        /* =====================================================
+           COVER TYPOGRAPHY
+        ===================================================== */
+
+        .cover-small {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold);
+
+            font-size: 18px;
+
+            font-weight: 500;
+
+            margin-bottom: 5px;
+        }
+
+
+        .cover-title {
+
+            font-family: "Aref Ruqaa", serif;
+
+            color: var(--burgundy);
+
+            font-size: clamp(58px, 10vw, 82px);
+
+            font-weight: 400;
+
+            line-height: 1.2;
+
+            text-shadow:
+                2px 2px 0 rgba(189,145,71,.5);
+
+            margin-bottom: 10px;
+        }
+
+
+        .ornament-line {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 14px;
+
+            color: var(--gold);
+
+            margin: 15px auto 25px;
+
+            max-width: 400px;
+        }
+
+
+        .ornament-line::before,
+        .ornament-line::after {
+
+            content: "";
+
+            height: 1px;
+
+            background: var(--gold);
+
+            flex: 1;
+        }
+
+
+        .ornament-line i {
+            font-size: 18px;
+        }
+
+
+        .cover-description {
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 16px;
+
+            font-weight: 500;
+
+            line-height: 1.8;
+
+            margin-bottom: 30px;
+        }
+
+
+
+        /* =====================================================
+           COVER COUPLE
+        ===================================================== */
+
+        .cover-couple {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 35px;
+
+            margin-bottom: 35px;
+        }
+
+
+        .cover-person span {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold);
+
+            font-size: 14px;
+
+            font-weight: 500;
+        }
+
+
+        .cover-person h2 {
+
+            font-family: "Aref Ruqaa", serif;
+
+            color: var(--burgundy);
+
+            font-size: clamp(48px, 9vw, 68px);
+
+            font-weight: 400;
+
+            line-height: 1.15;
+
+            margin-top: 3px;
+        }
+
+
+        .cover-rings {
+
+            color: var(--gold);
+
+            font-size: 38px;
+
+            animation: ringPulse 2s infinite;
+        }
+
+
+        @keyframes ringPulse {
+
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.12);
+            }
+        }
+
+
+
+        /* =====================================================
+           OPEN BUTTON
+        ===================================================== */
+
+        .open-button {
+
+            border: 1px solid var(--gold);
+
+            background: var(--burgundy);
+
+            color: var(--cream);
+
+            padding: 14px 30px;
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: .3s;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 8px 20px rgba(90,7,24,.2);
+        }
+
+
+        .open-button i {
+            margin-left: 8px;
+        }
+
+
+        .open-button:hover {
+
+            background: var(--burgundy-light);
+
+            transform: translateY(-3px);
+
+            box-shadow:
+                0 12px 25px rgba(90,7,24,.35);
+        }
+
+
+
+        /* =====================================================
+           INVITATION
+        ===================================================== */
+
+        .invitation {
+
+            display: none;
+
+            width: min(100%, 1000px);
+
+            margin: auto;
+
+            background: var(--cream);
+
+            min-height: 100vh;
+
+            overflow: hidden;
+
+            animation: invitationAppear 1s ease;
+        }
+
+
+        @keyframes invitationAppear {
+
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+        /* =====================================================
+           MUSIC
+        ===================================================== */
+
+        .music-button {
+
+            position: fixed;
+
+            top: 18px;
+
+            left: 18px;
+
+            z-index: 100;
+
+            border: 1px solid var(--gold);
+
+            background: var(--burgundy);
+
+            color: var(--gold-light);
+
+            padding: 10px 16px;
+
+            border-radius: 30px;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,.2);
+
+            transition: .3s;
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 12px;
+        }
+
+
+        .music-button:hover {
+
+            background: var(--burgundy-light);
+
+            transform: translateY(-2px);
+        }
+
+
+        .music-button i {
+            margin-left: 7px;
+        }
+
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            text-align: center;
+
+            padding: 80px 25px 45px;
+
+            position: relative;
+
+            background:
+                linear-gradient(
+                    rgba(255,255,255,.25),
+                    rgba(255,255,255,.25)
+                );
+        }
+
+
+        .hero-ornament {
+
+            color: var(--gold);
+
+            font-size: 38px;
+
+            margin-bottom: 8px;
+        }
+
+
+        .hero-small {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold);
+
+            font-size: 18px;
+
+            font-weight: 500;
+        }
+
+
+        .hero-title {
+
+            font-family: "Aref Ruqaa", serif;
+
+            font-size: clamp(58px, 10vw, 82px);
+
+            font-weight: 400;
+
+            color: var(--burgundy);
+
+            text-shadow:
+                2px 2px 0 rgba(189,145,71,.45);
+
+            line-height: 1.2;
+        }
+
+
+        .hero-description {
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 16px;
+
+            font-weight: 500;
+
+            line-height: 1.8;
+        }
+
+
+
+        /* =====================================================
+           PARENTS
+        ===================================================== */
+
+        .parents {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 25px;
+
+            padding: 25px 7% 50px;
+        }
+
+
+        .parent {
+
+            flex: 1;
+
+            text-align: center;
+        }
+
+
+        .parent-title {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold);
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            margin-bottom: 5px;
+        }
+
+
+        .parent h3 {
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 14px;
+
+            font-weight: 500;
+
+            margin-bottom: 2px;
+        }
+
+
+        .parent h2 {
+
+            font-family: "Amiri", serif;
+
+            color: var(--burgundy);
+
+            font-size: clamp(23px, 4vw, 30px);
+
+            font-weight: 700;
+
+            line-height: 1.5;
+        }
+
+
+        .parent-decoration {
+
+            color: var(--gold);
+
+            margin-top: 5px;
+
+            font-size: 18px;
+        }
+
+
+        .parents-divider {
+
+            width: 1px;
+
+            height: 120px;
+
+            background: var(--gold);
+
+            position: relative;
+        }
+
+
+        .parents-divider i {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform:
+                translate(-50%, -50%);
+
+            background: var(--cream);
+
+            color: var(--burgundy);
+
+            padding: 8px;
+
+            font-size: 16px;
+        }
+
+
+
+        /* =====================================================
+           COUPLE
+        ===================================================== */
+
+        .couple {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            gap: 65px;
+
+            padding: 20px 20px 60px;
+
+            text-align: center;
+        }
+
+
+        .couple-person span {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold);
+
+            font-size: 14px;
+
+            font-weight: 500;
+        }
+
+
+        .couple-person h2 {
+
+            font-family: "Aref Ruqaa", serif;
+
+            color: var(--burgundy);
+
+            font-size: clamp(68px, 11vw, 100px);
+
+            font-weight: 400;
+
+            line-height: 1;
+
+            margin: 5px 0 8px;
+
+            text-shadow:
+                2px 2px 0 rgba(189,145,71,.35);
+        }
+
+
+        .couple-decoration {
+
+            color: var(--gold);
+
+            font-size: 16px;
+        }
+
+
+
+        /* =====================================================
+           RINGS
+        ===================================================== */
+
+        .rings {
+
+            width: 115px;
+
+            height: 110px;
+
+            position: relative;
+
+            flex-shrink: 0;
+        }
+
+
+        .ring {
+
+            position: absolute;
+
+            width: 62px;
+
+            height: 62px;
+
+            border: 4px solid var(--gold);
+
+            border-radius: 50%;
+        }
+
+
+        .ring.one {
+
+            top: 15px;
+
+            right: 15px;
+        }
+
+
+        .ring.two {
+
+            top: 30px;
+
+            left: 12px;
+        }
+
+
+        .ring-diamond {
+
+            position: absolute;
+
+            top: 0;
+
+            right: 38px;
+
+            color: var(--gold);
+
+            font-size: 22px;
+        }
+
+
+        .ring-heart {
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 50%;
+
+            transform: translateX(-50%);
+
+            color: var(--burgundy);
+
+            font-size: 17px;
+        }
+
+
+
+        /* =====================================================
+           DETAILS
+        ===================================================== */
+
+        .details {
+
+            width: 86%;
+
+            margin: 0 auto 50px;
+
+            border: 1px solid #c5a467;
+
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            background: rgba(255,255,255,.12);
+        }
+
+
+        .detail {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            padding: 22px 25px;
+
+            text-align: center;
+
+            border-bottom: 1px solid #d7c29c;
+        }
+
+
+        .detail:last-child {
+            border-bottom: none;
+        }
+
+
+        .detail-icon {
+
+            width: 60px;
+
+            height: 60px;
+
+            flex-shrink: 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            border-radius: 50%;
+
+            background: var(--burgundy);
+
+            border: 2px solid var(--gold);
+
+            color: var(--gold-light);
+
+            font-size: 21px;
+        }
+
+
+        .detail-content h3 {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold);
+
+            font-size: 15px;
+
+            font-weight: 600;
+
+            margin-bottom: 4px;
+        }
+
+
+        .detail-content p {
+
+            font-family: "Tajawal", sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 500;
+
+            line-height: 1.7;
+
+            margin-bottom: 2px;
+        }
+
+
+        .detail-content small {
+
+            display: block;
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 11px;
+
+            line-height: 1.8;
+        }
+
+
+        .detail-content strong {
+
+            color: var(--burgundy);
+
+            font-family: "Tajawal", sans-serif;
+
+            font-size: 27px;
+
+            font-weight: 700;
+        }
+
+
+
+        /* =====================================================
+           WELCOME
+        ===================================================== */
+
+        .welcome {
+
+            text-align: center;
+
+            padding: 0 25px 55px;
+        }
+
+
+        .welcome-text {
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 19px;
+
+            font-weight: 500;
+
+            line-height: 1.9;
+        }
+
+
+
+        /* =====================================================
+           NOTES
+        ===================================================== */
+
+        .notes {
+
+            text-align: center;
+
+            padding: 30px 25px 55px;
+        }
+
+
+        .notes-title {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            color: var(--gold);
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 600;
+
+            margin-bottom: 28px;
+        }
+
+
+        .notes-title::before,
+        .notes-title::after {
+
+            content: "";
+
+            width: 100px;
+
+            height: 1px;
+
+            background: var(--gold);
+        }
+
+
+        .notes-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 35px;
+        }
+
+
+        .note {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 9px;
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 13px;
+
+            line-height: 1.7;
+        }
+
+
+        .note i {
+
+            color: var(--gold);
+
+            font-size: 18px;
+        }
+
+
+
+        /* =====================================================
+           COUNTDOWN
+        ===================================================== */
+
+        .countdown-section {
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    #70172d,
+                    var(--burgundy-dark)
+                );
+
+            color: var(--cream);
+
+            text-align: center;
+
+            padding: 65px 20px;
+        }
+
+
+        .countdown-title {
+
+            font-family: "Cairo", sans-serif;
+
+            color: var(--gold-light);
+
+            font-size: 19px;
+
+            font-weight: 600;
+
+            margin-bottom: 35px;
+        }
+
+
+        .countdown {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 18px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .counter {
+
+            width: 105px;
+
+            height: 105px;
+
+            border: 1px solid var(--gold);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background: rgba(0,0,0,.08);
+        }
+
+
+        .counter strong {
+
+            color: var(--gold-light);
+
+            font-size: 28px;
+
+            font-weight: 700;
+        }
+
+
+        .counter span {
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 11px;
+
+            margin-top: 3px;
+        }
+
+
+        .countdown-message {
+
+            font-family: "Cairo", sans-serif;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            margin-top: 35px;
+        }
+
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            background: var(--burgundy-dark);
+
+            color: var(--cream);
+
+            text-align: center;
+
+            padding: 50px 20px;
+        }
+
+
+        .footer-ring-icon {
+
+            color: var(--gold-light);
+
+            font-size: 36px;
+
+            margin-bottom: 10px;
+        }
+
+
+        footer h2 {
+
+            font-family: "Aref Ruqaa", serif;
+
+            color: var(--gold-light);
+
+            font-size: 42px;
+
+            font-weight: 400;
+        }
+
+
+        footer p {
+
+            font-family: "Amiri", serif;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            margin-top: 8px;
+        }
+
+
+        .footer-line {
+
+            width: 120px;
+
+            height: 1px;
+
+            background: var(--gold);
+
+            margin: 22px auto;
+        }
+
+
+        .credit {
+
+            font-family: "Cairo", sans-serif;
+
+            color: #d5b875;
+
+            font-size: 11px;
+
+            margin-top: 20px;
+        }
+
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 700px) {
+
+
+            .cover {
+                padding: 20px;
+            }
+
+
+            .cover-card {
+
+                min-height: 650px;
+
+                padding: 50px 18px;
+            }
+
+
+            .cover-title,
+            .hero-title {
+                font-size: 58px;
+            }
+
+
+            .cover-description,
+            .hero-description {
+                font-size: 15px;
+            }
+
+
+            .cover-couple {
+                gap: 15px;
+            }
+
+
+            .cover-person h2 {
+                font-size: 46px;
+            }
+
+
+            .cover-person span,
+            .couple-person span {
+                font-size: 13px;
+            }
+
+
+            .cover-rings {
+                font-size: 30px;
+            }
+
+
+            .parents {
+
+                flex-direction: column;
+
+                gap: 18px;
+            }
+
+
+            .parents-divider {
+
+                width: 100px;
+
+                height: 1px;
+            }
+
+
+            .parents-divider i {
+                padding: 5px 10px;
+            }
+
+
+            .parent-title {
+                font-size: 14px;
+            }
+
+
+            .parent h3 {
+                font-size: 13px;
+            }
+
+
+            .parent h2 {
+                font-size: 24px;
+            }
+
+
+            .couple {
+
+                gap: 10px;
+
+                padding-left: 10px;
+
+                padding-right: 10px;
+            }
+
+
+            .couple-person h2 {
+                font-size: 67px;
+            }
+
+
+            .rings {
+                transform: scale(.72);
+            }
+
+
+            .details {
+                width: 92%;
+            }
+
+
+            .detail {
+
+                gap: 15px;
+
+                padding: 18px 12px;
+            }
+
+
+            .detail-icon {
+
+                width: 52px;
+
+                height: 52px;
+
+                font-size: 19px;
+            }
+
+
+            .detail-content h3 {
+                font-size: 14px;
+            }
+
+
+            .detail-content p {
+                font-size: 16px;
+            }
+
+
+            .detail-content strong {
+                font-size: 25px;
+            }
+
+
+            .detail-content small {
+                font-size: 10px;
+            }
+
+
+            .welcome-text {
+                font-size: 17px;
+            }
+
+
+            .notes-title {
+                font-size: 16px;
+            }
+
+
+            .note {
+                font-size: 12px;
+            }
+
+
+            .countdown-title {
+                font-size: 17px;
+            }
+
+
+            .counter {
+
+                width: 82px;
+
+                height: 82px;
+            }
+
+
+            .counter strong {
+                font-size: 23px;
+            }
+
+
+            .counter span {
+                font-size: 10px;
+            }
+
+
+            .music-button {
+
+                top: 10px;
+
+                left: 10px;
+
+                font-size: 10px;
+
+                padding: 8px 12px;
+            }
+
+
+            footer h2 {
+                font-size: 37px;
+            }
+
+
+            footer p {
+                font-size: 15px;
+            }
+
+        }
+
+
+
+        /* =====================================================
+           SMALL MOBILE
+        ===================================================== */
+
+        @media (max-width: 430px) {
+
+
+            .cover-title,
+            .hero-title {
+                font-size: 52px;
+            }
+
+
+            .cover-small,
+            .hero-small {
+                font-size: 16px;
+            }
+
+
+            .cover-description,
+            .hero-description {
+                font-size: 14px;
+            }
+
+
+            .cover-person h2 {
+                font-size: 40px;
+            }
+
+
+            .couple-person h2 {
+                font-size: 58px;
+            }
+
+
+            .parent h2 {
+                font-size: 22px;
+            }
+
+
+            .detail-content p {
+                font-size: 15px;
+            }
+
+
+            .detail-content strong {
+                font-size: 23px;
+            }
+
+
+            .counter {
+
+                width: 70px;
+
+                height: 70px;
+            }
+
+
+            .counter strong {
+                font-size: 20px;
+            }
+
+
+            .counter span {
+                font-size: 9px;
+            }
+
+
+            footer h2 {
+                font-size: 34px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         COVER
+    ===================================================== -->
+
+    <section class="cover" id="cover">
+
+
+        <div class="cover-card">
+
+
+            <i class="fa-solid fa-leaf corner top-right"></i>
+
+            <i class="fa-solid fa-leaf corner top-left"></i>
+
+            <i class="fa-solid fa-leaf corner bottom-right"></i>
+
+            <i class="fa-solid fa-leaf corner bottom-left"></i>
+
+
+            <div class="cover-content">
+
+
+                <div class="cover-small">
+                    أفراح
+                </div>
+
+
+                <h1 class="cover-title">
+                    آل السحَّار
+                </h1>
+
+
+                <div class="ornament-line">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+
+                <p class="cover-description">
+                    يتشرفون بدعوتكم لحضور حفل زفاف
+                </p>
+
+
+                <div class="cover-couple">
+
+
+                    <div class="cover-person">
+
+                        <span>
+                            العروس
+                        </span>
+
+                        <h2>
+                            أروى
+                        </h2>
+
+                    </div>
+
+
+                    <div class="cover-rings">
+
+                        <i class="fa-solid fa-ring"></i>
+
+                    </div>
+
+
+                    <div class="cover-person">
+
+                        <span>
+                            العريس
+                        </span>
+
+                        <h2>
+                            مصعب
+                        </h2>
+
+                    </div>
+
+
+                </div>
+
+
+                <button class="open-button"
+                        onclick="openInvitation()">
+
+                    <i class="fa-regular fa-envelope-open"></i>
+
+                    اضغط لفتح الدعوة
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         INVITATION
+    ===================================================== -->
+
+    <main class="invitation" id="invitation">
+
+
+        <!-- MUSIC BUTTON -->
+
+        <button class="music-button"
+                onclick="toggleMusic()">
+
+            <i id="musicIcon"
+               class="fa-solid fa-music"></i>
+
+            <span id="musicText">
+                تشغيل الموسيقى
+            </span>
+
+        </button>
+
+
+
+        <!-- =================================================
+             HERO
+        ================================================= -->
+
+        <section class="hero">
+
+
+            <div class="hero-ornament">
+
+                <i class="fa-solid fa-leaf"></i>
+
+            </div>
+
+
+            <div class="hero-small">
+                أفراح
+            </div>
+
+
+            <h1 class="hero-title">
+                آل السحَّار
+            </h1>
+
+
+            <div class="ornament-line">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+
+            <p class="hero-description">
+                يتشرفان بدعوتكم لحضور حفل زفاف
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             PARENTS
+        ================================================= -->
+
+        <section class="parents">
+
+
+            <div class="parent">
+
+
+                <div class="parent-title">
+                    والد العريس
+                </div>
+
+
+                <h3>
+                    السيد
+                </h3>
+
+
+                <h2>
+                    جودت محمود السحَّار
+                </h2>
+
+
+                <div class="parent-decoration">
+
+                    <i class="fa-solid fa-feather-pointed"></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="parents-divider">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+
+
+            <div class="parent">
+
+
+                <div class="parent-title">
+                    والد العروس
+                </div>
+
+
+                <h3>
+                    السيد
+                </h3>
+
+
+                <h2>
+                    هاني يوسف أبو زايده
+                </h2>
+
+
+                <div class="parent-decoration">
+
+                    <i class="fa-solid fa-feather-pointed"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             COUPLE
+        ================================================= -->
+
+        <section class="couple">
+
+
+            <div class="couple-person">
+
+
+                <span>
+                    نجله
+                </span>
+
+
+                <h2>
+                    مصعب
+                </h2>
+
+
+                <div class="couple-decoration">
+
+                    <i class="fa-solid fa-feather-pointed"></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="rings">
+
+
+                <div class="ring one"></div>
+
+                <div class="ring two"></div>
+
+
+                <div class="ring-diamond">
+
+                    <i class="fa-solid fa-gem"></i>
+
+                </div>
+
+
+                <div class="ring-heart">
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="couple-person">
+
+
+                <span>
+                    كريمته
+                </span>
+
+
+                <h2>
+                    أروى
+                </h2>
+
+
+                <div class="couple-decoration">
+
+                    <i class="fa-solid fa-feather-pointed"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             DETAILS
+        ================================================= -->
+
+        <section class="details">
+
+
+            <div class="detail">
+
+
+                <div class="detail-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+
+                <div class="detail-content">
+
+
+                    <h3>
+                        المكان
+                    </h3>
+
+
+                    <p>
+                        صالة زهرة الاوركيد
+                    </p>
+
+
+                    <small>
+                        غزة - شارع النصر - شرق برج الشفاء بجوار مول بيتلو
+                    </small>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="detail">
+
+
+                <div class="detail-icon">
+
+                    <i class="fa-regular fa-calendar-days"></i>
+
+                </div>
+
+
+                <div class="detail-content">
+
+
+                    <h3>
+                        اليوم والتاريخ
+                    </h3>
+
+
+                    <p>
+                        يوم الخميس
+                    </p>
+
+
+                    <strong>
+                        ١٠ / ١
+                    </strong>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="detail">
+
+
+                <div class="detail-icon">
+
+                    <i class="fa-regular fa-clock"></i>
+
+                </div>
+
+
+                <div class="detail-content">
+
+
+                    <h3>
+                        الموعد
+                    </h3>
+
+
+                    <p>
+                        الساعة الرابعة والنصف مساءً
+                    </p>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             WELCOME
+        ================================================= -->
+
+        <section class="welcome">
+
+
+            <div class="ornament-line">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+
+            <h2 class="welcome-text">
+                نتشرف بحضوركم ومشاركتكم فرحتنا
+            </h2>
+
+
+            <div class="ornament-line">
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             NOTES
+        ================================================= -->
+
+        <section class="notes">
+
+
+            <h2 class="notes-title">
+                الملاحظات
+            </h2>
+
+
+            <div class="notes-container">
+
+
+                <div class="note">
+
+                    <i class="fa-solid fa-camera"></i>
+
+                    <span>
+                        ممنوع التصوير بالجوال
+                    </span>
+
+                </div>
+
+
+                <div class="note">
+
+                    <i class="fa-solid fa-location-arrow"></i>
+
+                    <span>
+                        الرجاء التوجه للصالة مباشرةً
+                    </span>
+
+                </div>
+
+
+                <div class="note">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                    <span>
+                        نوماً هنيئاً لأطفالكم
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             COUNTDOWN
+        ================================================= -->
+
+        <section class="countdown-section">
+
+
+            <h2 class="countdown-title">
+                العد التنازلي للموعد
+            </h2>
+
+
+            <div class="countdown">
+
+
+                <div class="counter">
+
+                    <strong id="days">
+                        00
+                    </strong>
+
+                    <span>
+                        أيام
+                    </span>
+
+                </div>
+
+
+                <div class="counter">
+
+                    <strong id="hours">
+                        00
+                    </strong>
+
+                    <span>
+                        ساعات
+                    </span>
+
+                </div>
+
+
+                <div class="counter">
+
+                    <strong id="minutes">
+                        00
+                    </strong>
+
+                    <span>
+                        دقائق
+                    </span>
+
+                </div>
+
+
+                <div class="counter">
+
+                    <strong id="seconds">
+                        00
+                    </strong>
+
+                    <span>
+                        ثواني
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <p class="countdown-message">
+                أهلاً وسهلاً بكم في أجمل أيامنا
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================= -->
+
+        <footer>
+
+
+            <div class="footer-ring-icon">
+
+                <i class="fa-solid fa-ring"></i>
+
+            </div>
+
+
+            <h2>
+                أروى & مصعب
+            </h2>
+
+
+            <p>
+                بارك الله لكما وبارك عليكما وجمع بينكما في خير
+            </p>
+
+
+            <div class="footer-line"></div>
+
+
+            <p>
+                بكل الحب ننتظركم
+                <i class="fa-solid fa-heart"></i>
+            </p>
+
+
+            <p class="credit">
+
+                Music:
+                Wedding by Alex-Productions
+                <br>
+                CC BY 3.0
+
+            </p>
+
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         MUSIC
+    ===================================================== -->
+
+    <audio id="weddingMusic"
+           loop
+           preload="none">
+
+        <source
+            src="https://www.free-stock-music.com/music/alex-productions/mp3/alex-productions-wedding.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+
+        /* فتح الدعوة */
+
+        function openInvitation() {
+
+            const cover =
+                document.getElementById("cover");
+
+            const invitation =
+                document.getElementById("invitation");
+
+
+            cover.style.display = "none";
+
+            invitation.style.display = "block";
+
+
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+
+        }
+
+
+
+        /* =================================================
+           MUSIC
+        ================================================= */
+
+        const music =
+            document.getElementById("weddingMusic");
+
+        const musicText =
+            document.getElementById("musicText");
+
+        const musicIcon =
+            document.getElementById("musicIcon");
+
+
+        let isPlaying = false;
+
+
+        function toggleMusic() {
+
+
+            if (!isPlaying) {
+
+
+                music.play()
+
+                    .then(() => {
+
+                        isPlaying = true;
+
+                        musicText.textContent =
+                            "إيقاف الموسيقى";
+
+                        musicIcon.className =
+                            "fa-solid fa-pause";
+
+                    })
+
+                    .catch(() => {
+
+                        alert(
+                            "تعذر تشغيل الموسيقى. تأكدي من اتصال الإنترنت."
+                        );
+
+                    });
+
+
+            } else {
+
+
+                music.pause();
+
+                isPlaying = false;
+
+                musicText.textContent =
+                    "تشغيل الموسيقى";
+
+                musicIcon.className =
+                    "fa-solid fa-music";
+
+            }
+
+        }
+
+
+
+        /* =================================================
+           COUNTDOWN
+        ================================================= */
+
+        const weddingDate =
+            new Date(
+                "October 1, 2026 16:30:00"
+            ).getTime();
+
+
+        function updateCountdown() {
+
+            const now =
+                new Date().getTime();
+
+
+            const distance =
+                weddingDate - now;
+
+
+            if (distance <= 0) {
+
+                document.getElementById("days")
+                    .textContent = "00";
+
+                document.getElementById("hours")
+                    .textContent = "00";
+
+                document.getElementById("minutes")
+                    .textContent = "00";
+
+                document.getElementById("seconds")
+                    .textContent = "00";
+
+                return;
+            }
+
+
+            const days =
+                Math.floor(
+                    distance /
+                    (1000 * 60 * 60 * 24)
+                );
+
+
+            const hours =
+                Math.floor(
+                    (distance %
+                        (1000 * 60 * 60 * 24)) /
+                    (1000 * 60 * 60)
+                );
+
+
+            const minutes =
+                Math.floor(
+                    (distance %
+                        (1000 * 60 * 60)) /
+                    (1000 * 60)
+                );
+
+
+            const seconds =
+                Math.floor(
+                    (distance %
+                        (1000 * 60)) /
+                    1000
+                );
+
+
+            document.getElementById("days")
+                .textContent =
+                String(days).padStart(2, "0");
+
+
+            document.getElementById("hours")
+                .textContent =
+                String(hours).padStart(2, "0");
+
+
+            document.getElementById("minutes")
+                .textContent =
+                String(minutes).padStart(2, "0");
+
+
+            document.getElementById("seconds")
+                .textContent =
+                String(seconds).padStart(2, "0");
+
+        }
+
+
+        updateCountdown();
+
+
+        setInterval(
+            updateCountdown,
+            1000
+        );
+
+
+    </script>
+
+
+</body>
+
+</html>
